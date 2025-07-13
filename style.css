@@ -1,0 +1,44 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 20px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+  color: #5a5a5a;
+}
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 10px;
+}
+.semestre {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+.semestre h2 {
+  text-align: center;
+  color: #888;
+}
+.cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.curso {
+  background-color: #ffe0ec;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+.curso.clicked {
+  background-color: #bde0fe;
+}
